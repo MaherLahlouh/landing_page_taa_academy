@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أكاديمية تاء - مغامرات الروبوتات للأطفال</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Main Video Background -->
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="assets/background_video.mp4" type="video/mp4">
+            متصفحك لا يدعم وسم الفيديو.
+        </video>
+    </div>
+    <div class="overlay"></div>
+
+    <header>
+        <img src="assets/icons/taa_logo.png" alt="أكاديمية تاء" class="logo-img"/>
+        <!-- Logo -->
+        <a href="#" class="logo">
+            <img src="assets/icons/taa_logo.png" alt="أكاديمية تاء" class="logo-img">
+            أكاديمية تاء
+        </a>
+
+        <nav class="nav-links">
+            <a href="#home" class="nav-link" data-key="nav.home">الرئيسية</a>
+            <a href="#digital-fab" class="nav-link" data-key="nav.digitalFab">مختبر التصنيع</a>
+            <a href="#features" class="nav-link" data-key="nav.features">المميزات</a>
+            <a href="#about" class="nav-link" data-key="nav.about">من نحن</a>
+            <a href="#contact" class="nav-link" data-key="nav.contact">اتصل بنا</a>
+        </nav>
+
+        <div class="language-switcher">
+            <button id="lang-toggle" class="lang-button">EN</button>
+        </div>
+
+        <!-- Book Now Button -->
+        <a href="https://docs.google.com/forms/d/1GK1cC0mH3mHzwo1bnDzepioZkDq_MUIE_rtTTv65DxE/edit" 
+           target="_blank" class="cta-button" data-key="cta.getStarted">احجز الآن</a>
+
+        <div class="mobile-menu">☰</div>
+    </header>
+
+    <section class="hero" id="home">
+        <h1><span class="highlight" data-key="hero.highlight">أطلق العنان</span> <span data-key="hero.title">لمبتكري الغد: مغامرات الروبوتات للأطفال!</span></h1>
+        <p data-key="hero.subtitle">أطلق العنان للفضول، وأشعل الإبداع، وابنِ المستقبل، روبوتًا واحدًا في كل مرة. وفر لطفلك المهارات اللازمة لعالم سريع التطور.</p>
+        <div class="hero-buttons">
+            <a href="https://docs.google.com/forms/d/e/1GK1cC0mH3mHzwo1bnDzepioZkDq_MUIE_rtTTv65DxE/viewform" 
+               target="_blank" class="cta-button" data-key="cta.startAdventure">احجز الآن</a>
+            <button class="secondary-button" data-key="cta.explorePrograms">استكشاف البرامج</button>
+        </div>
+    </section>
+
+    <!-- Digital Fabrication Lab Section -->
+    <section class="digital-fab" id="digital-fab">
+        <!-- Video Background -->
+         <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="assets/background_video.mp4" type="video/mp4">
+            متصفحك لا يدعم وسم الفيديو.
+        </video>
+    </div>
+        <!-- Overlay for readability -->
+        <div class="overlay-fab"></div>
+
+        <!-- Content -->
+        <div class="content">
+            <h2 class="section-title" data-key="digitalFab.title">مختبر التصنيع الرقمي</h2>
+            <p class="section-subtitle" data-key="digitalFab.subtitle">حيث تتحول الأفكار إلى واقع باستخدام أحدث تقنيات التصنيع الرقمي.</p>
+
+            <div class="fab-features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🖨️</div>
+                    <h3 data-key="digitalFab.3dPrinting">الطباعة ثلاثية الأبعاد</h3>
+                    <p data-key="digitalFab.3dPrintingDesc">يتعلم الطلاب تصميم وطباعة مكونات روبوتاتهم الخاصة باستخدام طابعات 3D متطورة.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✂️</div>
+                    <h3 data-key="digitalFab.laserCutting">قص الليزر</h3>
+                    <p data-key="digitalFab.laserCuttingDesc">استخدام أجهزة قص الليزر لإنشاء هياكل دقيقة من الخشب والبلاستيك.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💻</div>
+                    <h3 data-key="digitalFab.designSoftware">برمجيات التصميم</h3>
+                    <p data-key="digitalFab.designSoftwareDesc">التدريب على برامج مثل Tinkercad و Fusion 360 لتصميم مشاريعهم رقميًا.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔧</div>
+                    <h3 data-key="digitalFab.projectIntegration">دمج المشاريع</h3>
+                    <p data-key="digitalFab.projectIntegrationDesc">دمج العناصر المصنعة رقميًا مع الروبوتات والدوائر الإلكترونية لإنشاء مشاريع متكاملة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <h2 class="section-title" data-key="features.title">لماذا تختارنا</h2>
+        <p class="section-subtitle" data-key="features.subtitle">تم تصميم برامجنا المبتكرة لمساعدة أطفالك على النمو والنجاح في عالم اليوم التنافسي.</p>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🚀</div>
+                <h3 data-key="features.projectBased">قائم على المشاريع</h3>
+                <p data-key="features.projectBasedDesc">يتعلم الطلاب من خلال إنشاء مشاريع حقيقية يمكنهم الفخر بها.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3 data-key="features.ageAppropriate">مناسب للعمر</h3>
+                <p data-key="features.ageAppropriateDesc">برامج مصممة لمجموعات عمرية مختلفة، من المبتدئين إلى المتعلمين المتقدمين.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🏆</div>
+                <h3 data-key="features.experts">مدربون خبراء</h3>
+                <p data-key="features.expertsDesc">تعلم من معلمين شغوفين لديهم خبرة عملية في مجالات العلوم والتكنولوجيا والهندسة والرياضيات.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h3 data-key="features.handsOn">التعلم العملي</h3>
+                <p data-key="features.handsOnDesc">يركز منهجنا على الخبرة العملية المباشرة مع الروبوتات والبرمجة.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="https://placehold.co/600x500/115879/ffffff?text=عن+الشركة" alt="عن الشركة">
+            </div>
+            <div class="about-content">
+                <h2 data-key="about.title">عن أكاديمية تاء</h2>
+                <p data-key="about.p1">في أكاديمية تاء، نؤمن أن كل طفل لديه القدرة على أن يكون مبتكرًا. مهمتنا هي توفير تعليم روبوتات عالي الجودة ومتاح يلهم العقول الشابة ويعدّهم للمستقبل.</p>
+                <p data-key="about.p2">تأسست من قبل معلمين ومهندسين ذوي خبرة، نجمع بين الخبرة التربوية والتكنولوجيا المتطورة لإنشاء تجارب تعليمية جذابة. ساعدت برامجنا المئات من الأطفال على تطوير التفكير النقدي ومهارات حل المشكلات والإبداع.</p>
+                
+                <div class="about-stats">
+                    <div class="stat">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label" data-key="about.students">طالب</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label" data-key="about.experience">سنوات خبرة</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label" data-key="about.satisfaction">رضا</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section" id="contact">
+        <div class="cta-content">
+            <h2 data-key="cta.journeyTitle">مستعد لبدء رحلة طفلك؟</h2>
+            <p data-key="cta.journeySubtitle">انضم إلى مئات الطلاب الراضين الذين اكتشفوا متعة الروبوتات والبرمجة مع معلمينا الخبراء.</p>
+            <a href="https://docs.google.com/forms/d/e/1GK1cC0mH3mHzwo1bnDzepioZkDq_MUIE_rtTTv65DxE/viewform" 
+               target="_blank" class="cta-button" data-key="cta.enrollToday">احجز الآن</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3 data-key="footer.programs">البرامج</h3>
+                <ul>
+                    <li><a href="#" data-key="footer.beginner">الروبوتات للمبتدئين</a></li>
+                    <li><a href="#" data-key="footer.advanced">البرمجة المتقدمة</a></li>
+                    <li><a href="#" data-key="footer.competition">تحضير المسابقات</a></li>
+                    <li><a href="#" data-key="footer.camps">المعسكرات الصيفية</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 data-key="footer.resources">الموارد</h3>
+                <ul>
+                    <li><a href="#" data-key="footer.blog">مدونة التعلم</a></li>
+                    <li><a href="#" data-key="footer.guide">دليل الوالدين</a></li>
+                    <li><a href="#" data-key="footer.projects">مشاريع الطلاب</a></li>
+                    <li><a href="#" data-key="footer.faq">الأسئلة الشائعة</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 data-key="footer.company">الشركة</h3>
+                <ul>
+                    <li><a href="#" data-key="footer.about">من نحن</a></li>
+                    <li><a href="#" data-key="footer.team">فريقنا</a></li>
+                    <li><a href="#" data-key="footer.careers">الوظائف</a></li>
+                    <li><a href="#" data-key="footer.news">الأخبار</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 data-key="footer.contact">اتصل بنا</h3>
+                <ul>
+                    <li><a href="mailto:taaAcademy@gmail.com">taaAcademy@gmail.com</a></li>
+                    <li><a href="tel:0786200626">0786200626</a></li>
+                    <li><a href="#" data-key="footer.address">قصبة الزرقاء</a></li>
+                </ul>
+                <div class="social-links">
+                    <a href="https://web.facebook.com/ta2ai" target="_blank" aria-label="فيسبوك">
+                        <img src="assets/icons/facebook.png" alt="فيسبوك" class="social-icon">
+                    </a>
+                    <a href="https://www.instagram.com/taa_academy?igsh=YnV3eXU3ZnFueXFk" target="_blank" aria-label="إنستغرام">
+                        <img src="assets/icons/instagram.png" alt="إنستغرام" class="social-icon">
+                    </a>
+                    <a href="https://wa.me/962782913566" target="_blank" aria-label="واتس اب">
+                        <img src="assets/icons/whatsapp.png" alt="واتس اب" class="social-icon">
+                    </a>
+                    <a href="https://maps.google.com/?cid=3240599870435748624" target="_blank" aria-label="الموقع على الخريطة">
+                        <img src="assets/icons/location.png" alt="الموقع" class="social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; <span id="current-year">2025</span> <span data-key="footer.copyright">أكاديمية تاء. جميع الحقوق محفوظة.</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
