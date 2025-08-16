@@ -20,10 +20,10 @@
     <div class="overlay"></div>
 
     <header>
-        <img src="assets/icons/taa_logo.png" alt="أكاديمية تاء" class="logo-img"/>
+        <img src="assets/icons/img_last.png" alt="أكاديمية تاء" class="logo-img"/>
         <!-- Logo -->
         <a href="#" class="logo">
-            <img src="assets/icons/taa_logo.png" alt="أكاديمية تاء" class="logo-img">
+            <img src="assets/icons/img_last.png" alt="أكاديمية تاء" class="logo-img">
             أكاديمية تاء
         </a>
 
@@ -47,10 +47,14 @@
     </header>
 
     <section class="hero" id="home">
-        <h1><span class="highlight" data-key="hero.highlight">أطلق العنان</span> <span data-key="hero.title">لمبتكري الغد: مغامرات الروبوتات للأطفال!</span></h1>
+        <h1>
+            <span class="highlight" data-key="hero.highlight">أطلق العنان</span>
+            <span id="typing-text"></span>
+            <span class="cursor-blink">|</span>
+        </h1>
         <p data-key="hero.subtitle">أطلق العنان للفضول، وأشعل الإبداع، وابنِ المستقبل، روبوتًا واحدًا في كل مرة. وفر لطفلك المهارات اللازمة لعالم سريع التطور.</p>
         <div class="hero-buttons">
-            <a href="https://docs.google.com/forms/d/e/1GK1cC0mH3mHzwo1bnDzepioZkDq_MUIE_rtTTv65DxE/viewform" 
+            <a href="https://docs.google.com/forms/d/1aeizFFn9mPO0kOsRxHb6BE7KiiSHTFVECHw8DoIHCpc/viewform" 
                target="_blank" class="cta-button" data-key="cta.startAdventure">احجز الآن</a>
             <button class="secondary-button" data-key="cta.explorePrograms">استكشاف البرامج</button>
         </div>
@@ -58,14 +62,12 @@
 
     <!-- Digital Fabrication Lab Section -->
     <section class="digital-fab" id="digital-fab">
-        <!-- Video Background -->
-         <div class="video-background">
-        <video autoplay muted loop id="background-video">
-            <source src="assets/background_video.mp4" type="video/mp4">
-            متصفحك لا يدعم وسم الفيديو.
-        </video>
-    </div>
-        <!-- Overlay for readability -->
+        <div class="video-background">
+            <video autoplay muted loop id="background-video">
+                <source src="assets/background_video.mp4" type="video/mp4">
+                متصفحك لا يدعم وسم الفيديو.
+            </video>
+        </div>
         <div class="overlay-fab"></div>
 
         <!-- Content -->
@@ -97,6 +99,37 @@
             </div>
         </div>
     </section>
+
+
+    <!-- Digital Fabrication Lab Section -->
+<section class="features" id="digital-fab">
+    <h2 class="section-title" data-key="digitalFab.title">مختبر التصنيع الرقمي</h2>
+    <p class="section-subtitle" data-key="digitalFab.subtitle">حيث تتحول الأفكار إلى واقع باستخدام أحدث تقنيات التصنيع الرقمي.</p>
+
+    <div class="features-grid">
+        <div class="feature-card">
+            <div class="feature-icon">🖨️</div>
+            <h3 data-key="digitalFab.3dPrinting">الطباعة ثلاثية الأبعاد</h3>
+            <p data-key="digitalFab.3dPrintingDesc">يتعلم الطلاب تصميم وطباعة مكونات روبوتاتهم الخاصة باستخدام طابعات 3D متطورة.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">✂️</div>
+            <h3 data-key="digitalFab.laserCutting">قص الليزر</h3>
+            <p data-key="digitalFab.laserCuttingDesc">استخدام أجهزة قص الليزر لإنشاء هياكل دقيقة من الخشب والبلاستيك.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">💻</div>
+            <h3 data-key="digitalFab.designSoftware">برمجيات التصميم</h3>
+            <p data-key="digitalFab.designSoftwareDesc">التدريب على برامج مثل Tinkercad و Fusion 360 لتصميم مشاريعهم رقميًا.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🔧</div>
+            <h3 data-key="digitalFab.projectIntegration">دمج المشاريع</h3>
+            <p data-key="digitalFab.projectIntegrationDesc">دمج العناصر المصنعة رقميًا مع الروبوتات والدوائر الإلكترونية لإنشاء مشاريع متكاملة.</p>
+        </div>
+    </div>
+</section>
+
 
     <section class="features" id="features">
         <h2 class="section-title" data-key="features.title">لماذا تختارنا</h2>
@@ -219,6 +252,31 @@
             &copy; <span id="current-year">2025</span> <span data-key="footer.copyright">أكاديمية تاء. جميع الحقوق محفوظة.</span>
         </div>
     </footer>
+
+    <!-- Typing Animation Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const text = "لمبتكري الغد: مغامرات الروبوتات للأطفال!";
+            const typingText = document.getElementById("typing-text");
+            const cursor = document.querySelector(".cursor-blink");
+            let i = 0;
+
+            typingText.textContent = '';
+            cursor.style.display = 'inline';
+
+            function type() {
+                if (i < text.length) {
+                    typingText.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(type, 100);
+                } else {
+                    cursor.style.animation = 'none'; // stop blinking
+                }
+            }
+
+            setTimeout(type, 800); // delay after page load
+        });
+    </script>
 
     <script src="script.js"></script>
 </body>
