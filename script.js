@@ -6,6 +6,7 @@ const translations = {
         "nav.features": "المميزات",
         "nav.about": "من نحن",
         "nav.testimonials": "آراء العملاء",
+        "nav.store": "المتجر",
         "nav.contact": "اتصل بنا",
         "cta.getStarted": " احجز الآن",
         "hero.highlight": "أطلق العنان",
@@ -75,7 +76,21 @@ const translations = {
         "digitalFab.designSoftware": "برمجيات التصميم",
         "digitalFab.designSoftwareDesc": "التدريب على برامج مثل Tinkercad و Fusion 360 لتصميم مشاريعهم رقميًا.",
         "digitalFab.projectIntegration": "دمج المشاريع",
-        "digitalFab.projectIntegrationDesc": "دمج العناصر المصنعة رقميًا مع الروبوتات والدوائر الإلكترونية لإنشاء مشاريع متكاملة."
+        "digitalFab.projectIntegrationDesc": "دمج العناصر المصنعة رقميًا مع الروبوتات والدوائر الإلكترونية لإنشاء مشاريع متكاملة.",
+        //store section arabic 
+        "store.title": "المتجر - أكاديمية تاء",
+        "store.heroTitle": "مُتجر أكاديمية تاء",
+        "store.heroSubtitle": "اكتشف أدوات الروبوتات، مجموعات البناء، والهدايا التعليمية لصغار المبتكرين.",
+        "store.product1Title": "مجموعة بناء روبوت",
+        "store.product1Desc": "مجموعة تعليمية متكاملة لبناء روبوت ذكي مناسبة للأطفال من 8 إلى 14 سنة.",
+        "store.product2Title": "كتاب: مغامرات الإلكترونيات",
+        "store.product2Desc": "كتاب تفاعلي يشرح أساسيات الدوائر والكهرباء بطريقة ممتعة.",
+        "store.product3Title": "طابعة 3D تعليمية",
+        "store.product3Desc": "طابعة صغيرة وآمنة للأطفال لتصميم وطباعة مكونات مشاريعهم.",
+        "store.product4Title": "حقيبة STEM الشهرية",
+        "store.product4Desc": "اشتراك شهري ي送来 مشاريع جديدة في العلوم والتكنولوجيا والهندسة والرياضيات.",
+        "store.addToCart": "أضف إلى السلة",
+        "store.subscribe": "اشترك الآن"
     },
     en: {
         "nav.home": "Home",
@@ -83,6 +98,7 @@ const translations = {
         "nav.features": "Features",
         "nav.about": "About",
         "nav.testimonials": "Testimonials",
+        "nav.store": "Store",
         "nav.contact": "Contact",
         "cta.getStarted": "Get Started",
         "hero.highlight": "Unlock",
@@ -152,7 +168,21 @@ const translations = {
         "digitalFab.designSoftware": "Design Software",
         "digitalFab.designSoftwareDesc": "Training on tools like Tinkercad and Fusion 360 to design projects digitally.",
         "digitalFab.projectIntegration": "Project Integration",
-        "digitalFab.projectIntegrationDesc": "Integrate digitally fabricated parts with robots and electronics to build complete projects."
+        "digitalFab.projectIntegrationDesc": "Integrate digitally fabricated parts with robots and electronics to build complete projects.",
+        // Store section English
+        "store.title": "Store - Taa Academy",
+        "store.heroTitle": "Taa Academy Store",
+        "store.heroSubtitle": "Discover robotics kits, building sets, and educational gifts for young innovators.",
+        "store.product1Title": "Robot Building Kit",
+        "store.product1Desc": "A complete educational kit to build a smart robot, suitable for children aged 8 to 14.",
+        "store.product2Title": "Book: Adventures in Electronics",
+        "store.product2Desc": "An interactive book explaining the basics of circuits and electricity in a fun way.",
+        "store.product3Title": "Educational 3D Printer",
+        "store.product3Desc": "A small, safe 3D printer for kids to design and print their project parts.",
+        "store.product4Title": "Monthly STEM Box",
+        "store.product4Desc": "A monthly subscription delivering new science, technology, engineering, and math projects.",
+        "store.addToCart": "Add to Cart",
+        "store.subscribe": "Subscribe Now"
     }
 };
 
