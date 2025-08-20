@@ -12,7 +12,7 @@
 
     <!-- Main Video Background -->
     <div class="video-background">
-        <video autoplay muted loop id="background-video">
+        <video autoplay muted loop id="background-video" poster="assets/poster.jpg">
             <source src="assets/background_video.mp4" type="video/mp4">
             متصفحك لا يدعم وسم الفيديو.
         </video>
@@ -32,6 +32,7 @@
             <a href="#digital-fab" class="nav-link" data-key="nav.digitalFab">مختبر التصنيع</a>
             <a href="#features" class="nav-link" data-key="nav.features">المميزات</a>
             <a href="#about" class="nav-link" data-key="nav.about">من نحن</a>
+            <a href="store.html" class="nav-link">المتجر</a>
             <a href="#contact" class="nav-link" data-key="nav.contact">اتصل بنا</a>
         </nav>
 
@@ -62,12 +63,7 @@
 
     <!-- Digital Fabrication Lab Section -->
     <section class="digital-fab" id="digital-fab">
-        <div class="video-background">
-            <video autoplay muted loop id="background-video">
-                <source src="assets/background_video.mp4" type="video/mp4">
-                متصفحك لا يدعم وسم الفيديو.
-            </video>
-        </div>
+        <!-- 🔽 Removed duplicate video background -->
         <div class="overlay-fab"></div>
 
         <!-- Content -->
@@ -100,36 +96,34 @@
         </div>
     </section>
 
+    <!-- Digital Fabrication Lab Section (Duplicate ID, but kept as-is for now) -->
+    <section class="features" id="digital-fab">
+        <h2 class="section-title" data-key="digitalFab.title">مختبر التصنيع الرقمي</h2>
+        <p class="section-subtitle" data-key="digitalFab.subtitle">حيث تتحول الأفكار إلى واقع باستخدام أحدث تقنيات التصنيع الرقمي.</p>
 
-    <!-- Digital Fabrication Lab Section -->
-<section class="features" id="digital-fab">
-    <h2 class="section-title" data-key="digitalFab.title">مختبر التصنيع الرقمي</h2>
-    <p class="section-subtitle" data-key="digitalFab.subtitle">حيث تتحول الأفكار إلى واقع باستخدام أحدث تقنيات التصنيع الرقمي.</p>
-
-    <div class="features-grid">
-        <div class="feature-card">
-            <div class="feature-icon">🖨️</div>
-            <h3 data-key="digitalFab.3dPrinting">الطباعة ثلاثية الأبعاد</h3>
-            <p data-key="digitalFab.3dPrintingDesc">يتعلم الطلاب تصميم وطباعة مكونات روبوتاتهم الخاصة باستخدام طابعات 3D متطورة.</p>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🖨️</div>
+                <h3 data-key="digitalFab.3dPrinting">الطباعة ثلاثية الأبعاد</h3>
+                <p data-key="digitalFab.3dPrintingDesc">يتعلم الطلاب تصميم وطباعة مكونات روبوتاتهم الخاصة باستخدام طابعات 3D متطورة.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">✂️</div>
+                <h3 data-key="digitalFab.laserCutting">قص الليزر</h3>
+                <p data-key="digitalFab.laserCuttingDesc">استخدام أجهزة قص الليزر لإنشاء هياكل دقيقة من الخشب والبلاستيك.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💻</div>
+                <h3 data-key="digitalFab.designSoftware">برمجيات التصميم</h3>
+                <p data-key="digitalFab.designSoftwareDesc">التدريب على برامج مثل Tinkercad و Fusion 360 لتصميم مشاريعهم رقميًا.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔧</div>
+                <h3 data-key="digitalFab.projectIntegration">دمج المشاريع</h3>
+                <p data-key="digitalFab.projectIntegrationDesc">دمج العناصر المصنعة رقميًا مع الروبوتات والدوائر الإلكترونية لإنشاء مشاريع متكاملة.</p>
+            </div>
         </div>
-        <div class="feature-card">
-            <div class="feature-icon">✂️</div>
-            <h3 data-key="digitalFab.laserCutting">قص الليزر</h3>
-            <p data-key="digitalFab.laserCuttingDesc">استخدام أجهزة قص الليزر لإنشاء هياكل دقيقة من الخشب والبلاستيك.</p>
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon">💻</div>
-            <h3 data-key="digitalFab.designSoftware">برمجيات التصميم</h3>
-            <p data-key="digitalFab.designSoftwareDesc">التدريب على برامج مثل Tinkercad و Fusion 360 لتصميم مشاريعهم رقميًا.</p>
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon">🔧</div>
-            <h3 data-key="digitalFab.projectIntegration">دمج المشاريع</h3>
-            <p data-key="digitalFab.projectIntegrationDesc">دمج العناصر المصنعة رقميًا مع الروبوتات والدوائر الإلكترونية لإنشاء مشاريع متكاملة.</p>
-        </div>
-    </div>
-</section>
-
+    </section>
 
     <section class="features" id="features">
         <h2 class="section-title" data-key="features.title">لماذا تختارنا</h2>
